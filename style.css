@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    display: grid;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    position: absolute;
+    height: 60px;
+    background-color: #070720;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_logo {
+    color: white;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+    font-weight: 600;
+}
+
+.header_logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.header_logo a:last-child {
+    color: #e53637;
+}
+
+.header_menu {
+    color: white;
+    list-style: none;
+    display: flex;
+}
+
+.header_menu li {
+    padding: 20px;
+    font-size: 16px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_menu li:hover {
+    background-color:#e53637 ;
+}
+
+.menu_items_catagories i {
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.header_info {
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.header_info_search {
+    padding: 24px;
+}
+
+.header_info div:hover {
+    background-color:#e53637 ;
+}
+
+.header_info_user {
+    padding: 24px;
+}
+
+/* Content */
+
+.content {
+    position: absolute;
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    justify-content: center;
+    background-color: #0b0b2b;
+}
+
+.secondary_content {
+    width: 1200px;
+    display: flex;
+    margin: 50px;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.secondary_content_items {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.secondary_content_button {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    bottom: 46px;
+    left: 46px;
+}
+
+.secondary_content_button button {
+    height: 42px;
+    width: 144px;
+    background-color: #e53637;
+    color: rgba(255, 255, 255, 0.7) ;
+    border-radius: 6px;
+    border-style: none;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.secondary_content_button button:hover {
+    color: white;
+}
+
+.secondary_content_button_icon {
+    background-color:#e53637 ;
+    color: rgba(255, 255, 255, 0.7) ;
+    height: 42px;
+    width: 26px;
+    border-radius: 6px;
+    margin-left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondary_content_button_icon:hover {
+    color: white;
+
+}
+
+.secondary_content_item {
+    position: absolute;
+}
+
+.last_content_item {
+}
+
+.next_content_item {
+}
+
+.content_item_button {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: #2c2b44;
+    position: absolute;
+    top: -50px;
+  }
+.content_item_button:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: #2c2b44;
+}
+
+.secondary_content_item {
+    width: 1200px;
+    position: absolute;
+}
+
+.secondary_content_item_about {
+    left: 48px;
+    bottom: 30%;
+    position: absolute;
+    max-width: 400px;
+    
+}
+
+.secondary_content_item_about p:first-child {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px black;
+}
+
+.secondary_content_item_about p:last-child {
+    color: white;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.secondary_content_item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Main Content */
+
+.main_content {
+    height: 2200px;
+    display: flex;
+    padding: 0px 50px;
+    position: relative;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.content_left {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: calc(100%/3*2);
+    gap: 60px;
+}
+
+.trending_movies { 
+    
+}
+
+.movies_title {
+    border-left: #e53637 solid 4px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.movies_title p {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 6px 18px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    
+}
+
+.movides_viewall {
+    display: flex;
+    align-items: center;
+}
+
+.movides_viewall a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 200;
+    padding-right: 14px ;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.movides_viewall i {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.trending_movies_catagories {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.movies_items {
+    width: calc(100% / 3 - 20px) ;
+    position: relative;
+    
+}
+
+.movies_item_poster {
+    position: relative;
+    display: flex;
+    height: 380px;
+}
+
+.movies_item_chapter {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e53637;
+    color: white;
+    font-size: 16px;
+    width: 74px;
+    height: 22px;
+    border-radius: 3px;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.movies_item_poster img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.movies_item_comment {
+    background-color: #3c3c3c;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 3px 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.movies_item_comment i{
+    padding-right: 4px;
+}
+
+.movies_item_views {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c3c3c;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 3px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    right: 10px;
+    bottom: 10px;
+}
+.movies_item_views i{
+    padding-right: 4px;
+}
+
+.movies_items_about {
+    
+}
+.movies_items_about_type {
+    padding: 24px 0px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.movies_items_about_type a{
+    text-decoration: none;
+    color: white;
+    background-color: #47475c;
+    margin-right: 10px;
+    padding: 2px 14px;
+    border-radius: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 12px;
+}
+
+.movies_items_about_name {
+    text-decoration: none;
+    color: white;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.content_right {
+    display: flex;
+    position: absolute;
+}
